@@ -1,0 +1,40 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name = "Regression suite" thread-count = "3"  parallel = "tests" verbose = "3">
+
+ <test name = "Amazon Test ">
+ 
+ 	<parameter name = "browser" value = "chrome"/>
+
+ 	<classes>
+ 	
+ 	<class name = "TestNGSessions.AmazonTest"/>
+ 	</classes>
+ </test>
+  <test name = "OrangeHRM Test ">
+  	<parameter name = "browser" value = "firefox"/>
+
+ 	<classes>
+ 	<class name = "TestNGSessions.OrangeHRMTest"/>
+ 	</classes>
+ </test>
+ 
+   <test name = "Classic CRM Test ">
+   	<parameter name = "browser" value = "chrome"/>
+
+ 	<classes>
+ 	<class name = "TestNGSessions.ClassicCRMTest"/>
+ 	</classes>
+ </test>
+
+
+
+
+
+
+
+
+
+</suite>
